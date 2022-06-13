@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@id/nav_home"
+        android:name="com.example.inbox.ui.home.HomeFragment"
+        android:label="INBOX"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_inbox"
+        android:name="com.example.inbox.ui.home.HomeFragment"
+        android:label="@string/nav_inbox"
+        tools:layout="@layout/fragment_home"/>
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.inbox.fragment_settings"
+        android:label="@string/nav_settings"
+        tools:layout="@layout/fragment_settings">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.example.inbox.fragment_send"
+        android:label="@string/nav_send"
+        tools:layout="@layout/fragment_send"/>
+
+    <fragment
+        android:id="@+id/nav_star"
+        android:name="com.example.inbox.fragment_star"
+        android:label="@string/nav_star"
+        tools:layout="@layout/fragment_star"/>
+    <fragment
+        android:id="@+id/nav_trash"
+        android:name="com.example.inbox.fragment_trash"
+        android:label="@string/nav_trash"
+        tools:layout="@layout/fragment_trash"/>
+
+    <fragment
+        android:id="@+id/nav_trash_box"
+        android:name="com.example.inbox.fragment_trash_box"
+        android:label="@string/nav_trash_box"
+        tools:layout="@layout/fragment_trash_box"/>
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_settings"-->
+<!--        android:name="com.example.inbox.ui.gallery.GalleryFragment"-->
+<!--        android:label="@string/nav_settings"-->
+<!--        tools:layout="@layout/fragment_settings" />-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_slideshow"-->
+<!--        android:name="com.example.inbox.ui.slideshow.SlideshowFragment"-->
+<!--        android:label="@string/menu_slideshow"-->
+<!--        tools:layout="@layout/fragment_slideshow" />-->
+</navigation>
